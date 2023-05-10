@@ -43,9 +43,9 @@ Collaborate with your team members by sharing the board and assigning tasks.
 
 
 Contributors:-
-Apoorv Verma
-Neha Rajbhar
-Janamjay Kumar
+Apoorv Verma,
+Neha Rajbhar,
+Janamjay Kumar and 
 Robin Sharma
 
 
