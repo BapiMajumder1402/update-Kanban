@@ -1,8 +1,7 @@
 import './App.css';
-
+import ToDo from './components/toDo/ToDo';
 import Layout from './components/layout/Layout';
 
-import ToDo from './components/toDo/toDo';
 
 
 function App() {
