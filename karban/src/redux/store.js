@@ -3,7 +3,7 @@ import toDoReducer from './toDoSlice'
 
 
 export const store=configureStore({
-    reducer:{
+    reducer:{ 
         toDo: toDoReducer
     }
 })
