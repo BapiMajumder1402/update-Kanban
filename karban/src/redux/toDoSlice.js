@@ -6,7 +6,7 @@ const initialState={
 
 export const toDoSlice=createSlice({
     name:"toDo", 
-    initialState,
+    initialState, 
     reducers:{
         addTask: (state, action)=>{
             state.value.push({id:uuid(), task: action.payload, completed: false})
