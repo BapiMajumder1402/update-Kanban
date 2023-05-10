@@ -1,3 +1,5 @@
+
+
 .navbar{
     
     height: 10%;
@@ -11,15 +13,16 @@
     color: white;
     font-size: 1.5rem;
     width: 20%;
-    position: relative;
-    top: 25px;
-    left: 70px;
+    padding: 14px 29px;
 }
 .icon{
     /* border: 1px solid green; */
     margin-left: 30px;
     text-align: center;
     margin-top: 50px;
+}
+.icon svg{
+    padding-top: 5px;
 }
 .button{
     /* border: 1px solid red; */
@@ -32,6 +35,8 @@
 }
 .userImage{
     border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
 .share{
     height: 40px;
@@ -40,10 +45,8 @@
     background-color: lightblue;
     font-size: 1rem;
     border: none;
-    margin-top: 3%;
     border-radius: 5px;
     font-weight: 400;
-    padding: 3%;
 }
 .user{
     font-size: 1.2rem;
