@@ -3,7 +3,9 @@ import { FiMoreHorizontal } from "react-icons/fi";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { FiCheckSquare } from "react-icons/fi";
 import card from "./card.module.css";
+
 import Chip from "../tags/Chip";
+
 
 const Card = () => {
   return (
@@ -13,6 +15,7 @@ const Card = () => {
           <Chip text="Urgent" color="red" />
           <Chip text="Frontend" color="blue" />
           <Chip text="code" color="green" />
+
         </div>
         <FiMoreHorizontal />
       </div>
