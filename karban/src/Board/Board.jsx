@@ -12,7 +12,15 @@ const Board = () => {
         </p>
         <FiMoreHorizontal />
       </div>
-      <div className={board.board_cards}>
+      <div className={`${board.board_cards}  ${board.custom_scroll}`}>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
         <Card/>
       </div>
     </div>
