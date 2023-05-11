@@ -2,6 +2,7 @@ import React from "react";
 import board from "./board.module.css";
 import { FiMoreHorizontal } from "react-icons/fi";
 import Card from "../card/Card";
+import Editable from "../Editable/Editable";
 
 const Board = () => {
   return (
@@ -16,12 +17,7 @@ const Board = () => {
         <Card/>
         <Card/>
         <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Editable/>
       </div>
     </div>
   );

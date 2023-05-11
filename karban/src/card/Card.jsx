@@ -11,6 +11,7 @@ const Card = () => {
       <div className={card.card_top}>
         <div className={card.card_labels}>
           <Chip text="Urgent" color="red" />
+          <Chip text="Frontend" color="blue" />
         </div>
         <FiMoreHorizontal />
       </div>
