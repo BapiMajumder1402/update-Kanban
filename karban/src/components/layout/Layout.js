@@ -1,18 +1,22 @@
 import React from "react";
 import style from "./Layout.module.css";
 import Navbar from "../nabar/Navbar";
-import { AiOutlinePlus } from "react-icons/ai";
+import Board from "../../Board/Board";
+// import { AiOutlinePlus } from "react-icons/ai";
 function Layout() {
   return (
     <div className={style.mainLayout}>
       <div className={style.image}>
         <Navbar />
 
-        <div>
-          <button className={style.list}>
-            <AiOutlinePlus />
-            Add a List
-          </button>
+        <div className={style.outer_board}>
+          <div className={style.inner_board}>
+            <Board />
+            <Board />
+            <Board />
+            <Board />
+            <Board />
+          </div>
         </div>
       </div>
     </div>

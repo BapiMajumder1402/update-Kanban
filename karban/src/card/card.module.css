@@ -1,0 +1,24 @@
+.card_main{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card_top{
+    display: flex;
+    gap: 5px;
+}
+.card_labels{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+.card_top svg{
+    opacity: 0;
+    transition: 200ms;
+}
+.card_main:hover .card_top svg{
+    opacity: 1;
+}

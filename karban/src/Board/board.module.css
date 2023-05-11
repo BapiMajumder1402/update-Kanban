@@ -1,0 +1,31 @@
+.main_board{
+    min-width: 290px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.board_top{
+    display: flex;
+}
+.board_top_tittle{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-weight: 700;
+}
+.board_top_tittle span{
+    color: grey;
+}
+
+.board_cards{
+    background-color: #dbd2d2;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 10px;
+}
