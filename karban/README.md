@@ -24,17 +24,17 @@ completedList: {
     ]
 
 }
-Kanban Group React JS Project:-
+                                          Kanban Group React JS Project
+
 This is a collaborative Kanban board project developed by Apoorv, Neha, Janamjay, and Robin. The purpose of this project is to create a digital Kanban board using React JS and implement drag-and-drop functionality for managing tasks and workflows.
 
 
 Table of Contents:-
-Introduction
-Features
-Technologies Used
-Getting Started
-Usage
-Contributors
+1.Introduction
+2.Features
+3.Technologies Used
+4.Usage
+5.Contributors
 
 
 Introduction:-
@@ -69,13 +69,10 @@ Collaborate with your team members by sharing the board and assigning tasks.
 
 
 Contributors:-
-Apoorv Verma,
-Neha Rajbhar,
-Janamjay Kumar and 
-Robin Sharma
-
-
-
+* Apoorv Verma
+* Neha Rajbhar
+* Janamjay Kumar 
+* Robin Sharma
 
 We appreciate all contributions to this project, whether it's through bug reports, feature suggestions, or pull requests.
 
