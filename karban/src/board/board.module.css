@@ -21,6 +21,12 @@
   display: flex;
   margin-top: 1rem;
 }
+.top_more{
+  position: relative;
+}
+.top_more svg{  
+  cursor: pointer;
+}
 .board_top_tittle {
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -48,4 +54,15 @@
 }
 .board_cards::-webkit-scrollbar {
   display: none;
+}
+.dropdown{
+  background-color: transparent;
+  width: 100px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 20px rgba(0,0,0,0.1);
+}
+.dropdown p{
+  color: red;
+  cursor: pointer;
 }
