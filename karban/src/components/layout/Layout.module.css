@@ -1,20 +1,43 @@
-.mainLayout{
-    border: 1px solid red;
-    width: 100vw;
-    height: 100vh;
-   
+.mainLayout {
+  border: 1px solid red;
+  width: 100vw;
+  height: 100vh;
 }
 
-.image{
-    background: url("https://plus.unsplash.com/premium_photo-1682126252712-1d98e031a71a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    width: 100vw;
+.image {
+  background: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/33b3ef2cfb29119c7974dcbab0a6cd47/photo-1683125554888-33d34e38ddea.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
 }
-.list{
-    height: 30px;
-    width: 200px;
-    border: 1px solid blue;
+.list {
+  height: auto;
+  width: 272px;
+  text-align: left;
+  background-color: #ffffff3d;
+  cursor: pointer;
+  color: white;
+  padding: 8px;
+  margin: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: none;
+}
+.placeholder{
+    padding: 6px 18px;
+   
+    transition: color 85ms ease-in;
+
+}
+.mainLayout::-webkit-scrollbar {
+  display: none;
+}
+.addIcon{
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    margin-right: 4px;
 }

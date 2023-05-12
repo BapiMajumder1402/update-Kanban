@@ -2,6 +2,7 @@ import React from "react";
 import style from "./Layout.module.css";
 import Navbar from "../nabar/Navbar";
 import { AiOutlinePlus } from "react-icons/ai";
+import Details from "../details/Details";
 function Layout() {
   return (
     <div className={style.mainLayout}>
@@ -10,10 +11,17 @@ function Layout() {
 
         <div>
           <button className={style.list}>
-            <AiOutlinePlus />
-            Add a List
+            <span className={style.placeholder}>
+              <span className={style.addIcon}>
+              <AiOutlinePlus />
+              </span>
+              Add a List
+            </span>
+           
+           
           </button>
         </div>
+        <Details/>
       </div>
     </div>
   );
