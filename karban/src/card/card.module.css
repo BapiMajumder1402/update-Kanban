@@ -1,41 +1,58 @@
-.card_main{
+.card_main {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card_top {
+  display: flex;
+  gap: 5px;
+}
+.top_more {
+  position: relative;
+}
+.top_more svg {
+  cursor: pointer;
+}
+.card_labels {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+.card_top svg {
+  opacity: 0;
+  transition: 200ms;
+}
+.card_main:hover .card_top svg {
+  opacity: 1;
+}
+.card_title {
+  font-weight: 700;
+}
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_footer p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.card_footer svg {
+  height: 14px;
+  width: 14px;
+}
+.dropdown{
+    background-color: transparent;
+    width: 100px;
     padding: 10px;
     border-radius: 5px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.card_top{
-    display: flex;
-    gap: 5px;
-}
-.card_labels{
-    display: flex;
-    flex: 1;
-    gap: 10px;
-}
-.card_top svg{
-    opacity: 0;
-    transition: 200ms;
-}
-.card_main:hover .card_top svg{
-    opacity: 1;
-}
-.card_title{
-    font-weight: 700;
-}
-.card_footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card_footer p{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-.card_footer svg{
-    height: 14px;
-    width: 14px;
-}
+    box-shadow: 1px 0px 20px rgba(0,0,0,0.1);
+  }
+  .dropdown p{
+    color: red;
+    cursor: pointer;
+  }
