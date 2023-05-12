@@ -6,15 +6,13 @@ import Details from "../details/Details";
 
 import Navbar from "../navbar/Navbar";
 import Board from "../../board/Board";
-
- 
+import Editable from "../../editable/Editable";
 
 function Layout() {
   return (
     <div className={style.mainLayout}>
       <div className={style.image}>
         <Navbar />
-
 
         {/* <div>
           <button className={style.list}>
@@ -30,17 +28,16 @@ function Layout() {
           </div> */}
         <div className={style.outer_board}>
           <div className={style.inner_board}>
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
+            <Board />
+            <Board />
+            <Editable
+            text="Add Board"
+            placeholder="Enter board Title"
+            />
           </div>
-
         </div>
-        <Details/>
-     
-    </div>
+        <Details />
+      </div>
     </div>
   );
 }

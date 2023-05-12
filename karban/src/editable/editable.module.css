@@ -1,31 +1,74 @@
+.main_edit {
+  width: 100%;
+}
+.input_edit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_edit input{
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #1379ec;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 .list {
-    height: auto;
-    width: 272px;
-    text-align: left;
-    background-color: #ffffff3d;
-    cursor: pointer;
-    color: white;
-    padding: 8px;
-    margin: 20px;
-    margin-top: 0px;
-    border-radius: 12px;
-    box-sizing: border-box;
+  height: auto;
+  width: 50%;
+  text-align: left;
+  background-color: #ffffff3d;
+  cursor: pointer;
+  color: white;
+  padding: 8px;
+  /* margin: 20px;
+  margin-top: 0px; */
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 1rem;
+}
+.list:hover{
+    background-color: #9291913d;
+}
+.placeholder {
+  padding: 6px 18px;
+  width: 15rem;
+  transition: color 85ms ease-in;
+}
+
+.addIcon {
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.edit_footer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.edit_footer button{
+    outline: none;
     border: none;
-  }
-  .placeholder{
-      padding: 6px 18px;
-     
-      transition: color 85ms ease-in;
-  
-  
-  }
-  .mainLayout::-webkit-scrollbar {
-    display: none;
-  }
-  .addIcon{
-      font-size: 16px;
-      height: 20px;
-      line-height: 20px;
-      width: 20px;
-      margin-right: 4px;
-  }
+    background-color: #1379ec;
+    color: #fff;
+    transition: 200ms;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit_footer button:hover{
+    background-color: #0765d1;
+}
+.svg{
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    color: yellow ;
+}

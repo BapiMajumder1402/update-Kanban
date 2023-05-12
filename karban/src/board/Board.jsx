@@ -17,7 +17,10 @@ const Board = () => {
         <Card/>
         <Card/>
         <Card/>
-        <Editable/>
+        <Editable 
+        text= "Add task"
+        placeholder ="Enter Card Title"
+        />
         {/* hello */}
       </div>
     </div>
