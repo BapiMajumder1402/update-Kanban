@@ -4,37 +4,20 @@
 }
 
 .mainLayout {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  /* overflow-x: scroll; */
-  /* overflow-y: hidden; */
-
-  /* box-sizing: border-box; */
 }
-/* .image::-webkit-scrollbar {
-  display: none;
-} */
 
 .image {
   background: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/33b3ef2cfb29119c7974dcbab0a6cd47/photo-1683125554888-33d34e38ddea.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-
   height: 100vh;
   width: 100%;
-
-  /* min-height: 100vh; */
-  /* width: 100%; */
-
 }
-/* .list {
-  height: 30px;
-  width: 200px;
-  border: 1px solid blue;
-} */
+
 .outer_board {
   box-sizing: border-box;
   display: flex;
