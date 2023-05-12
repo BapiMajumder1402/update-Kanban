@@ -27,7 +27,7 @@ function Layout() {
            
            
           </button>
-
+          </div>
         <div className={style.outer_board}>
           <div className={style.inner_board}>
             <Board/>
@@ -39,7 +39,8 @@ function Layout() {
 
         </div>
         <Details/>
-      </div>
+     
+    </div>
     </div>
   );
 }
