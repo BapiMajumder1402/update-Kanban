@@ -16,7 +16,7 @@ function Layout() {
         <Navbar />
 
 
-        <div>
+        {/* <div>
           <button className={style.list}>
             <span className={style.placeholder}>
               <span className={style.addIcon}>
@@ -27,7 +27,7 @@ function Layout() {
            
            
           </button>
-          </div>
+          </div> */}
         <div className={style.outer_board}>
           <div className={style.inner_board}>
             <Board/>
