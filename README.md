@@ -1,3 +1,29 @@
+toDoList: {
+
+    name: "ToDo"
+    tasks: [
+        {id: 1 , title: "Project 1" , description: , createdAt: , previousList: null, order: }
+    ]
+
+}
+
+inProgressList: {
+
+    name: "In Progress"
+    tasks: [
+        {id: 2 , title: "Project 2" , description: , createdAt: , previousList: toDoList, order: }
+    ]
+
+}
+
+completedList: {
+
+    name: "Completed"
+    tasks: [
+        {id: 3 , title: "Project 3" , description: , createdAt: , previousList: null, currentList: , order: }
+    ]
+
+}
 Kanban Group React JS Project:-
 This is a collaborative Kanban board project developed by Apoorv, Neha, Janamjay, and Robin. The purpose of this project is to create a digital Kanban board using React JS and implement drag-and-drop functionality for managing tasks and workflows.
 
@@ -52,10 +78,6 @@ Robin Sharma
 
 
 We appreciate all contributions to this project, whether it's through bug reports, feature suggestions, or pull requests.
-
-
-
-
 
 
 
