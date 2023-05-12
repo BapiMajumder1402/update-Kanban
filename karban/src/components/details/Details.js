@@ -3,7 +3,9 @@ import style from "./Details.module.css";
 import {FaLaptop} from "react-icons/fa";
 import {RxCross2} from "react-icons/rx";
 import Icons from '../icons/Icons';
-import Discription from '../description/Discription';
+
+import Discription from '../description/Description';
+
 import Activity from '../activity/Activity';
 function Details() {
     const [input,setInput]=useState("hii")

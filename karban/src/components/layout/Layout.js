@@ -3,7 +3,8 @@ import style from "./Layout.module.css";
 import Details from "../details/Details";
 import Navbar from "../navbar/Navbar";
 import Board from "../../board/Board";
-import Editable from "../../editable/Editable";
+
+ 
 
 function Layout() {
   // const [boards,setBoard] = useState([{
@@ -15,12 +16,11 @@ function Layout() {
         <Navbar />
         <div className={style.outer_board}>
           <div className={style.inner_board}>
-            <Board />
-            <Board />
-            <Editable
-            text="Add Board"
-            placeholder="Enter board Title"
-            />
+            <Board/>
+            <Board/>
+            <Board/>
+            <Board/>
+            <Board/>
           </div>
         </div>
         <Details />
