@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Layout.module.css";
 import Navbar from "../navbar/Navbar";
-import Board from "../board/Board";
+import Board from "../../board/Board";
 
  
 function Layout() {
