@@ -1,0 +1,47 @@
+.main{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+.disc{
+    /* border: 1px solid green; */
+    width: 20%;
+    color: #172B4D;
+    width: 90%;
+    position: relative;
+    left: 2%;
+    font-size: 18px;
+}
+.button{
+    color: #172B4D;
+    background-color: #091E420F;
+    font-size: 14px;
+    min-height: 45px;
+    border-radius: 3px;
+    padding: 8px 12px;
+    border: none;
+    width: 70%;
+    text-align: left;
+}
+.button:hover{
+    background-color: #dcdde1;
+}
+.justifyIcon{
+    padding-left: 3%;
+    font-size: 24px;
+    font-weight: 400;
+    /* border: 1px solid blue; */
+    margin-top: 12px;
+}
+.inputs{
+   
+    height: 270px;
+    width: 600px;
+}
+
+.inputs input{
+    width: 100%;
+    min-height: 100%;
+}.inputs input:focus{
+    outline-color: lightskyblue;
+}
