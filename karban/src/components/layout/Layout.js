@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import style from "./Layout.module.css";
-import Details from "../details/Details";
+// import Details from "../details/Details";
 import Navbar from "../navbar/Navbar";
 import Board from "../../board/Board";
 import Editable from "../../editable/Editable";
 
+import { Outlet } from "react-router-dom";
+
+import { v4 as uuid } from "uuid";
+
 function Layout() {
   const [boards, setBoard] = useState([
     {
-      id: Date.now() + Math.random() * 2,
+      id: uuid(),
       title: "Tasks",
       cards: [
         {
-          id: Date.now() + Math.random(),
+          id: uuid(),
           title: "Card 1",
           tasks: [],
           labels: [
@@ -25,7 +29,7 @@ function Layout() {
           date: "",
         },
         {
-          id: Date.now() + Math.random(),
+          id: uuid(),
           title: "Card 2",
           tasks: [],
           labels: [
@@ -43,7 +47,7 @@ function Layout() {
 
   const addCard = (title, bid) => {
     const card = {
-      id: Date.now() + Math.random(),
+      id: uuid(),
       title,
       lables: [],
       tasks: [],
@@ -79,32 +83,33 @@ function Layout() {
       },
     ]);
   };
-  const removeBoard=(bid)=>{
-    const tempBoards = boards.filter((item)=>{
-      return item.id!== bid;
-    }) 
+  const removeBoard = (bid) => {
+    const tempBoards = boards.filter((item) => {
+      return item.id !== bid;
+    });
     setBoard(tempBoards);
-  }
+  };
   return (
-    <div className={style.mainLayout}>
-      <div className={style.image}>
-        <Navbar />
-        <div className={style.outer_board}>
-          <div className={style.inner_board}>
-            {boards.map((item) => (
-              <Board key={item.id} board={item}
+    <>
+      <div className={style.mainLayout}>
+        <div className={style.image}>
+          <Navbar />
+          <div className={style.outer_board}>
+            <div className={style.inner_board}>
+              {boards.map((item) => (
+                <Board key={item.id} board={item} />
+              ))}
+              <Editable
+                text="Add Board"
+                placeholder="Enter Board Title"
+                onSubmit={(value) => addBoard(value)}
               />
-            ))}
-            <Editable 
-            text="Add Board" 
-            placeholder="Enter Board Title" 
-            onSubmit={(value)=>addBoard(value)}
-            />
+            </div>
           </div>
         </div>
-        <Details />
+        <Outlet />
       </div>
-    </div>
+    </>
   );
 }
 

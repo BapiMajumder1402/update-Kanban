@@ -4,11 +4,16 @@ import {FaLaptop} from "react-icons/fa";
 import {RxCross2} from "react-icons/rx";
 import Icons from '../icons/Icons';
 
-import Discription from '../description/Description';
+import Description from '../description/Description';
 
 import Activity from '../activity/Activity';
+
+import {useParams} from 'react-router-dom'
+
 function Details() {
     const [input,setInput]=useState("hii")
+    const {cardId}=useParams()
+    
     function handleInput(e){
     setInput(e.target.value)
     }
@@ -29,7 +34,7 @@ function Details() {
         </span>
       </div>
       <div>
-        <Discription/>
+        <Description/>
         <Activity/>
       </div>
     </div>
