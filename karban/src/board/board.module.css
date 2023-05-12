@@ -1,7 +1,7 @@
 .main_board {
   min-width: 290px;
   max-height: 100%;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -26,6 +26,8 @@
 }
 .top_more svg{  
   cursor: pointer;
+  color: #6e9450;
+
 }
 .board_top_tittle {
   font-size: 1.5rem;
@@ -34,16 +36,17 @@
   flex: 1;
   align-items: center;
   font-weight: 700;
+  color: #BFCCB5;
 }
 .board_top_tittle span {
-  color: grey;
+  color: #72905b;
 }
 
 .board_cards {
   display: flex;
   flex: 1;
   height: 100%;
-  background-color: transparent;
+  background-color: #AFD3E2;
   border-radius: 14px;
   flex-direction: column;
   gap: 10px;

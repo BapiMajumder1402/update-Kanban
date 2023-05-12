@@ -5,7 +5,7 @@ import Card from "../card/Card";
 import Editable from "../editable/Editable";
 import Dropdown from "../dropdown/Dropdown";
 
-const Board = () => {
+const Board = (props) => {
   const [showDropdown, setShowDropdown] = useState(false);
   function handleClick() {
     setShowDropdown(!showDropdown);
@@ -14,25 +14,25 @@ const Board = () => {
     <div className={board.main_board}>
       <div className={board.board_top}>
         <p className={board.board_top_tittle}>
-          To Do <span> &nbsp; 2</span>
+          {props.board?.title}
+          <span> &nbsp;{props.board?.cards?.length}</span>
         </p>
-        <div className={board.top_more}  >
-          <FiMoreHorizontal onClick={handleClick}/>
+        <div className={board.top_more}>
+          <FiMoreHorizontal onClick={handleClick} />
           {showDropdown && (
-              <Dropdown>
-                <div className={board.dropdown}>
-                  <p>Delete</p>
-                </div>
-              </Dropdown>
+            <Dropdown>
+              <div className={board.dropdown}>
+                <p>Delete</p>
+              </div>
+            </Dropdown>
           )}
         </div>
       </div>
       <div className={`${board.board_cards}  ${board.custom_scroll}`}>
-        <Card />
-        <Card />
-        <Card />
+        {props.board?.cards?.map((item) => (
+          <Card key={item.id}  card={item}/>
+        ))}
         <Editable text="Add task" placeholder="Enter Card Title" />
-        {/* hello */}
       </div>
     </div>
   );
