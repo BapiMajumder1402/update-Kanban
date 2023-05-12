@@ -5,6 +5,7 @@ import edit from "./editable.module.css";
 
 const Editable = (props) => {
   const [showEdit, setShowEdit] = useState(false);
+  const [inputValue, setInputValue] = useState("");
   return (
     <div className={edit.main_edit}>
       {showEdit ? (
@@ -12,13 +13,16 @@ const Editable = (props) => {
           className={`${edit.input_edit} ${props.editClass || ""}`}
           onSubmit={(e) => {
             e.preventDefault();
-            if (props.onSubmit) props.onSubmit();
+            if (props.onSubmit) props.onSubmit(inputValue);
+            setShowEdit(false);
+            setInputValue("");
           }}
         >
           <input
             autoFocus
             type="text"
-            defaultValue={props.text}
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
             placeholder={props.placeholder || "Enter text"}
           />
           <div className={edit.edit_footer}>
