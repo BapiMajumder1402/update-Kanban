@@ -1,5 +1,6 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { GrFormClose } from "react-icons/gr";
+import { AiOutlinePlus } from "react-icons/ai";
 import edit from "./editable.module.css";
 
 const Editable = (props) => {
@@ -21,11 +22,19 @@ const Editable = (props) => {
           />
           <div className={edit.edit_footer}>
             <button type="submit">{props.buttonText || "Add"}</button>
-            <GrFormClose onClick={()=> setShowEdit(false)}/>
+            <GrFormClose onClick={() => setShowEdit(false)} />
           </div>
         </form>
       ) : (
-        <p onClick={()=> setShowEdit(true)}>{props.text || "Add task"}</p>
+        <button className={edit.list} onClick={() => setShowEdit(true)}>
+          <span className={edit.placeholder}>
+            <span className={edit.addIcon}>
+              <AiOutlinePlus />
+            </span>
+            {props.text || "Add task"}
+          </span>
+        </button>
+        // <p onClick={()=> setShowEdit(true)}>{props.text || "Add task"}</p>
       )}
     </div>
   );
