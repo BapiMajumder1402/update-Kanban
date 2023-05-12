@@ -9,30 +9,37 @@ const Editable = (props) => {
     <div className={edit.main_edit}>
       {showEdit ? (
         <form
-          className={edit.input_edit}
+          className={`${edit.input_edit} ${props.editClass || ""}`}
           onSubmit={(e) => {
             e.preventDefault();
             if (props.onSubmit) props.onSubmit();
           }}
         >
           <input
+            autoFocus
             type="text"
             defaultValue={props.text}
-            placeholder={props.placeholder}
+            placeholder={props.placeholder || "Enter text"}
           />
           <div className={edit.edit_footer}>
             <button type="submit">{props.buttonText || "Add"}</button>
-            <GrFormClose onClick={() => setShowEdit(false)} />
+            <GrFormClose
+              className={edit.svg}
+              onClick={() => setShowEdit(false)}
+            />
           </div>
         </form>
       ) : (
-        <button className={edit.list} onClick={() => setShowEdit(true)}>
-          <span className={edit.placeholder}>
+        <button
+          className={`${edit.list}  ${props.listClass || ""}`}
+          onClick={() => setShowEdit(true)}
+        >
+          <p className={edit.placeholder}>
             <span className={edit.addIcon}>
               <AiOutlinePlus />
             </span>
             {props.text || "Add task"}
-          </span>
+          </p>
         </button>
         // <p onClick={()=> setShowEdit(true)}>{props.text || "Add task"}</p>
       )}

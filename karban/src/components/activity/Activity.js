@@ -24,7 +24,7 @@ function Activity() {
         </div>
         <div className={style.comment}>
             <span className={style.justifyImage}>
-            <img className={style.userImage} src=" https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png" width="50px" height="50px"/>
+            <img className={style.userImage} src=" https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png" alt="user" width="50px" height="50px"/>
             </span>
             <span className={style.commentBtn}>
                 <button>Comment</button>

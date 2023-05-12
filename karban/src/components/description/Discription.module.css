@@ -50,8 +50,6 @@
   .savedInput {
     cursor: pointer;
   }
-
-}
 .button:hover{
     background-color: #dcdde1;
 }
