@@ -10,7 +10,6 @@ function Activity() {
   }
   return (
     <>
-    
     <div className={style.main}>
       <span className={style.justifyIcon}>
         <Icons icon={<RxActivityLog />} />
@@ -40,9 +39,6 @@ function Activity() {
         )}
         </div>
         </>
-     
-     
-    
   );
 }
 
